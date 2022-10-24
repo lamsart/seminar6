@@ -1,0 +1,19 @@
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Введите количество чисел");
+        int Index = Convert.ToInt32(Console.ReadLine());
+        int qty, t;
+        qty = 0;
+        for (int i = 0; i < Index; i++)
+        {
+            Console.WriteLine("Введите число");
+            t = Convert.ToInt32(Console.ReadLine());
+            if (t > 0)
+                qty++;
+        }
+        Console.WriteLine(qty);
+        Console.ReadKey(true);
+    }
+}
